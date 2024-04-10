@@ -1,0 +1,24 @@
+nav{
+    height: 50px;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: cadetblue;
+}
+
+.left-wing{
+    height: calc(100vh - 50px);
+    width: 130px;
+    background-color: dodgerblue;
+}
+
+.main_content{
+    width: calc(100% - 130px) ;
+    background-color: grey;
+}
+
+.c_white{
+    color:white
+}

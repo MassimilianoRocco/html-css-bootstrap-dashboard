@@ -13,19 +13,19 @@
 <body>
    
     <!-- Navbar -->
-    <nav class="row p-2 m-0">
-        <div class="col-1 d-flex align-items-center">
+    <nav class="row p-2 g-0">
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-3 col-3  d-flex align-items-center">
             <img src="./img/logo.svg" alt="boolean logo" class="img-fluid">
         </div>
 
-        <div class="col-10">
-            <form class="d-flex" role="search">
+        <div class="col-xl-10 col-lg-8 col-md-6 col-sm-6 col-5 d-flex align-items-center">
+            <form class="d-flex col-12" role="search">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success mx-1" type="submit">Search</button>
             </form>
         </div>
 
-        <div class="col-1 d-flex align-items-center">
+        <div class="col-xl-1 col-lg-2 col-md-3 col-sm-3 col-4 d-flex align-items-center">
             <div class="col-3 px-2">
                 <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
             </div>
@@ -51,6 +51,57 @@
             </div>
         </div>
     </nav>
+
+    <main class="d-flex">
+
+        <!-- Nav-sx -->
+        <div class="left-wing row flex-column justify-content-between py-3 g-0">
+
+            <div class="row justify-content-center m-0">
+                <div class="home-box col-12 d-flex justify-content-center">
+                    <div class="home-logo mx-2">
+                        <i class="fa-solid fa-house c_white"></i>
+                    </div>
+                    <p class="home-text d-none d-sm-block d-md-block c_white">Home</p>
+                </div>
+
+                <div class="stats-box col-12 d-flex justify-content-center">
+                    <div class="stats-logo mx-2">
+                        <i class="fa-solid fa-chart-simple c_white"></i>
+                    </div>
+                    <p class="stats-text d-none d-sm-block c_white">Stats</p>
+                </div>
+            
+                <div class="signal-box col-12 d-flex justify-content-center">
+                    <div class="signal-logo mx-2">
+                        <i class="fa-solid fa-signal c_white"></i>
+                    </div>
+                    <p class="signal-text d-none d-sm-block c_white ">Signals</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center m-0">
+                <div class="admin-box col-12 d-flex justify-content-center">
+                    <div class="gear-icon mx-2 c_white">
+                        <i class="fa-solid fa-gear mx-1"></i>
+                    </div>
+                
+                    <p class="admin-text d-none d-sm-block c_white">Admin</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="main_content row g-0"></div>
+
+
+
+
+
+    </main>
+
+
 
         
 </body>
