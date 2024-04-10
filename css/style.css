@@ -11,7 +11,7 @@ main{
 .left-wing{
     height: calc(100vh - 50px);
     width: 130px;
-    background-color: dodgerblue;
+    background-color: #051e34;
 }
 
 .main_content{
@@ -21,4 +21,26 @@ main{
 
 .c_white{
     color:white
+}
+.bg_inside_header_blue{
+    background-color : #1b72e8;
+}
+.bg_daker_blue{
+    background-color : #165bba;
+}
+
+.inside_header{
+    height: 100px
+}
+
+.my_tiny_fonts{
+    font-size: 0.7rem;
+}
+.my_bigger_fonts{
+    font-size: 1.3rem;
+}
+
+.my_special_button{
+    height: 50px;
+    margin-left: 1rem;
 }
