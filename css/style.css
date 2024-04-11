@@ -57,3 +57,16 @@ main{
 .my-faq-card{
 
 }
+
+
+@media screen and (max-width: 576px) {
+    .offcanvas{
+        --bs-offcanvas-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .offcanvas{
+        --bs-offcanvas-width: 50% !important;
+    }
+}

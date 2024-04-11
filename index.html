@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="row p-2 g-0">
         <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-3  d-flex align-items-center">
-            <img src="./img/logo.svg" alt="boolean logo" class="img-fluid">
+            <button class="border-0 bg-white"><img src="./img/logo.svg" alt="boolean logo" class="img-fluid"></button>
         </div>
 
         <div class="col-xl-10 col-lg-8 col-md-8 col-sm-6 col-6 d-flex align-items-center">
@@ -58,22 +58,23 @@
         <div class="left-wing row flex-column justify-content-between py-3 g-0">
 
             <div class="row justify-content-center m-0">
-                <div class="home-box col-12 d-flex justify-content-center">
-                    <button class="home-text c_white btn btn-outline-primary border-0 p-2">
+
+                <div class="home-box col-12 d-flex justify-content-center p-0 m-0">
+                    <button class="home-text c_white btn btn-outline-primary border-0">
                         <i class="fa-solid fa-house c_white"></i>
                         <span class="d-none d-md-inline">Home</span>
                     </button>
                 </div>
 
-                <div class="home-box col-12 d-flex justify-content-center">
-                    <button class="home-text c_white btn btn-outline-primary border-0 px-4">
+                <div class="home-box col-12 d-flex justify-content-center p-0 m-0">
+                    <button class="home-text c_white btn btn-outline-primary border-0 ">
                         <i class="fa-solid fa-chart-simple c_white"></i>
                         <span class="d-none d-md-inline">Stats</span>
                     </button>
                 </div>
 
-                <div class="home-box col-12 d-flex justify-content-center">
-                    <button class="home-text c_white btn btn-outline-primary border-0 px-4">
+                <div class="home-box col-12 d-flex justify-content-center p-0 m-0">
+                    <button class="home-text c_white btn btn-outline-primary border-0">
                         <i class="fa-solid fa-signal c_white"></i>
                         <span class="d-none d-md-inline">Signals</span>
                     </button>
@@ -82,12 +83,11 @@
 
 
             <div class="row justify-content-center m-0">
-                <div class="admin-box col-12 d-flex justify-content-center">
-                    <div class="gear-icon mx-2 c_white">
+                <div class="home-box col-12 d-flex justify-content-center p-0 m-0">
+                    <button class="home-text c_white btn btn-outline-primary border-0">
                         <i class="fa-solid fa-gear mx-1"></i>
-                    </div>
-                
-                    <p class="admin-text d-none d-sm-block c_white">Admin</p>
+                        <span class="d-none d-md-inline">Admin</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
                     <button class="btn btn-primary my_special_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus border border-white p-2"></i></button>
 
                     <!-- OFFCANVAS -->
-                    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
