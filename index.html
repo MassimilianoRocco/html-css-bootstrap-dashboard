@@ -38,10 +38,10 @@
                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i>
                 
                 <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
                 </a>
             </div>
@@ -123,13 +123,107 @@
                     
                     <button class="btn btn-primary my_special_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus border border-white p-2"></i></button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        ...
+                    <div class="offcanvas-body ">
+                       
+                        <section>
+                            <div class="container py-3">
+                    
+                                <form class="row g-3">
+
+                                    <!-- Nome -->
+                                    <div class="col-md-6">
+                                      <label for="validation-FirstName" class="form-label">First name</label>
+                                      <input type="text" class="form-control" id="validation-FirstName" placeholder="Mario" required>
+                                    </div>
+                    
+                                    <!-- Cognome -->
+                                    <div class="col-md-6">
+                                      <label for="validation-LastName" class="form-label">Last name</label>
+                                      <input type="text" class="form-control" id="validation-LastName" placeholder="Rossi" required>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="col-md-6">
+                                      <label for="validationEmail" class="form-label">Email</label>
+                                      <div class="input-group has-validation">
+                                        <input type="email" class="form-control" id="validationEmail" aria-describedby="validationEmailFeedback" placeholder="name@example.com" required>
+                                      </div>
+                                    </div>
+                                    
+                                    <!-- Password -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                        <div>
+                                          <input type="password" class="form-control" id="inputPassword">
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Indirizzo -->
+                                    <div class="col-md-12">
+                                        <label for="validation-Indirizzo" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="validation-Indirizzo" placeholder="" required>
+                                    </div>
+
+                                    <!-- Città -->
+                                    <div class="row mt-4">
+                                        <div class="col-6 gx-2">
+                                            <label for="exampleDataList" class="form-label col-6">Città</label>
+                                            <input class="form-control m-0" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                            <datalist id="datalistOptions">
+                                            <option value="San Francisco">
+                                            <option value="New York">
+                                            <option value="Seattle">
+                                            <option value="Los Angeles">
+                                            <option value="Chicago">
+                                            </datalist>
+                                        </div>
+
+                                        <!-- Stato -->
+                                        <div class="col-4 gx-2">
+                                            <label for="exampleDataList" class="form-label col-4">Stato</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select...</option>
+                                            <option value="1">Italy</option>
+                                            <option value="2">England</option>
+                                            <option value="3">France</option>
+                                        </select>
+                                        </div>
+
+                                        <!-- CAP -->
+                                        <div class="col-2 gx-2 ">
+                                            <label for="exampleDataList" class="form-label col-2">CAP</label>
+                                            <input type="number" class="form-control" id="validation-Cap" placeholder="" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="formFileSm" class="form-label">Foto</label>
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                      </div>
+                                    
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Check-box" aria-describedby="Check-boxFeedback" required>
+                                        <label class="form-check-label" for="Check-box">
+                                            Seleziona per proseguire
+                                        </label>
+                                        <div id="Check-boxFeedback" class="Check-box"></div>
+                                      </div>
+                                    </div>
+                    
+                                    <div class="col-3 d-flex my-3">
+                                      <button class="btn btn-primary mx-1" type="submit">Salva</button>
+                                      <button class="btn btn-warning" type="submit">Svuota</button>
+                                    </div>
+                                  </form>
+                            </div>     
+                        </section>
+
                     </div>
                     </div>
 
