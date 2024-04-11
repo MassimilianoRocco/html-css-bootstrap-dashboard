@@ -45,3 +45,18 @@ main{
     margin-left: 1rem;
 }
 
+
+/* Inside-content */
+
+.left-container{
+    width: 70%;
+    background-color: lightskyblue;
+}
+.right-container{
+    width: 30%;
+    background-color: thistle;
+}
+
+.my_link-logo{
+    height: 1.5rem;
+}
