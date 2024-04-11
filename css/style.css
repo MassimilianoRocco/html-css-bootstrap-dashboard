@@ -11,6 +11,7 @@ main{
     height: calc(100vh - 50px);
     width: 130px;
     background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .main_content{

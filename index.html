@@ -59,26 +59,27 @@
 
             <div class="row justify-content-center m-0">
                 <div class="home-box col-12 d-flex justify-content-center">
-                    <div class="home-logo mx-2">
+                    <button class="home-text c_white btn btn-outline-primary border-0 p-2">
                         <i class="fa-solid fa-house c_white"></i>
-                    </div>
-                    <p class="home-text d-none d-sm-block d-md-block c_white">Home</p>
+                        <span class="d-none d-md-inline">Home</span>
+                    </button>
                 </div>
 
-                <div class="stats-box col-12 d-flex justify-content-center">
-                    <div class="stats-logo mx-2">
+                <div class="home-box col-12 d-flex justify-content-center">
+                    <button class="home-text c_white btn btn-outline-primary border-0 px-4">
                         <i class="fa-solid fa-chart-simple c_white"></i>
-                    </div>
-                    <p class="stats-text d-none d-sm-block c_white">Stats</p>
+                        <span class="d-none d-md-inline">Stats</span>
+                    </button>
                 </div>
-            
-                <div class="signal-box col-12 d-flex justify-content-center">
-                    <div class="signal-logo mx-2">
+
+                <div class="home-box col-12 d-flex justify-content-center">
+                    <button class="home-text c_white btn btn-outline-primary border-0 px-4">
                         <i class="fa-solid fa-signal c_white"></i>
-                    </div>
-                    <p class="signal-text d-none d-sm-block c_white ">Signals</p>
+                        <span class="d-none d-md-inline">Signals</span>
+                    </button>
                 </div>
             </div>
+
 
             <div class="row justify-content-center m-0">
                 <div class="admin-box col-12 d-flex justify-content-center">
@@ -123,109 +124,111 @@
                     
                     <button class="btn btn-primary my_special_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus border border-white p-2"></i></button>
 
-                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body ">
+                    <!-- OFFCANVAS -->
+                    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body ">
                        
-                        <section>
-                            <div class="container py-3">
-                    
-                                <form class="row g-3">
+                            <section>
+                                <div class="container py-3">
+                        
+                                    <form class="row g-3">
 
-                                    <!-- Nome -->
-                                    <div class="col-md-6">
-                                      <label for="validation-FirstName" class="form-label">First name</label>
-                                      <input type="text" class="form-control" id="validation-FirstName" placeholder="Mario" required>
-                                    </div>
-                    
-                                    <!-- Cognome -->
-                                    <div class="col-md-6">
-                                      <label for="validation-LastName" class="form-label">Last name</label>
-                                      <input type="text" class="form-control" id="validation-LastName" placeholder="Rossi" required>
-                                    </div>
-
-                                    <!-- Email -->
-                                    <div class="col-md-6">
-                                      <label for="validationEmail" class="form-label">Email</label>
-                                      <div class="input-group has-validation">
-                                        <input type="email" class="form-control" id="validationEmail" aria-describedby="validationEmailFeedback" placeholder="name@example.com" required>
-                                      </div>
-                                    </div>
-                                    
-                                    <!-- Password -->
-                                    <div class="col-md-6">
-                                        <label for="inputPassword" class="form-label">Password</label>
-                                        <div>
-                                          <input type="password" class="form-control" id="inputPassword">
+                                        <!-- Nome -->
+                                        <div class="col-md-6">
+                                        <label for="validation-FirstName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="validation-FirstName" placeholder="Mario" required>
                                         </div>
-                                    </div>
-                    
-                                    <!-- Indirizzo -->
-                                    <div class="col-md-12">
-                                        <label for="validation-Indirizzo" class="form-label">Indirizzo</label>
-                                        <input type="text" class="form-control" id="validation-Indirizzo" placeholder="" required>
-                                    </div>
-
-                                    <!-- Città -->
-                                    <div class="row mt-4">
-                                        <div class="col-6 gx-2">
-                                            <label for="exampleDataList" class="form-label col-6">Città</label>
-                                            <input class="form-control m-0" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                                            <datalist id="datalistOptions">
-                                            <option value="San Francisco">
-                                            <option value="New York">
-                                            <option value="Seattle">
-                                            <option value="Los Angeles">
-                                            <option value="Chicago">
-                                            </datalist>
+                        
+                                        <!-- Cognome -->
+                                        <div class="col-md-6">
+                                        <label for="validation-LastName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="validation-LastName" placeholder="Rossi" required>
                                         </div>
 
-                                        <!-- Stato -->
-                                        <div class="col-4 gx-2">
-                                            <label for="exampleDataList" class="form-label col-4">Stato</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>Select...</option>
-                                            <option value="1">Italy</option>
-                                            <option value="2">England</option>
-                                            <option value="3">France</option>
-                                        </select>
+                                        <!-- Email -->
+                                        <div class="col-md-6">
+                                        <label for="validationEmail" class="form-label">Email</label>
+                                        <div class="input-group has-validation">
+                                            <input type="email" class="form-control" id="validationEmail" aria-describedby="validationEmailFeedback" placeholder="name@example.com" required>
+                                        </div>
+                                        </div>
+                                        
+                                        <!-- Password -->
+                                        <div class="col-md-6">
+                                            <label for="inputPassword" class="form-label">Password</label>
+                                            <div>
+                                            <input type="password" class="form-control" id="inputPassword">
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Indirizzo -->
+                                        <div class="col-md-12">
+                                            <label for="validation-Indirizzo" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="validation-Indirizzo" placeholder="" required>
                                         </div>
 
-                                        <!-- CAP -->
-                                        <div class="col-2 gx-2 ">
-                                            <label for="exampleDataList" class="form-label col-2">CAP</label>
-                                            <input type="number" class="form-control" id="validation-Cap" placeholder="" required>
+                                        <!-- Città -->
+                                        <div class="row mt-4">
+                                            <div class="col-6 gx-2">
+                                                <label for="exampleDataList" class="form-label col-6">Città</label>
+                                                <input class="form-control m-0" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                <datalist id="datalistOptions">
+                                                <option value="San Francisco">
+                                                <option value="New York">
+                                                <option value="Seattle">
+                                                <option value="Los Angeles">
+                                                <option value="Chicago">
+                                                </datalist>
+                                            </div>
+
+                                            <!-- Stato -->
+                                            <div class="col-4 gx-2">
+                                                <label for="exampleDataList" class="form-label col-4">Stato</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select...</option>
+                                                <option value="1">Italy</option>
+                                                <option value="2">England</option>
+                                                <option value="3">France</option>
+                                            </select>
+                                            </div>
+
+                                            <!-- CAP -->
+                                            <div class="col-2 gx-2 ">
+                                                <label for="exampleDataList" class="form-label col-2">CAP</label>
+                                                <input type="number" class="form-control" id="validation-Cap" placeholder="" required>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="mb-3">
-                                        <label for="formFileSm" class="form-label">Foto</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                      </div>
-                                    
-                                    <div class="col-12">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="Check-box" aria-describedby="Check-boxFeedback" required>
-                                        <label class="form-check-label" for="Check-box">
-                                            Seleziona per proseguire
-                                        </label>
-                                        <div id="Check-boxFeedback" class="Check-box"></div>
-                                      </div>
-                                    </div>
-                    
-                                    <div class="col-3 d-flex my-3">
-                                      <button class="btn btn-primary mx-1" type="submit">Salva</button>
-                                      <button class="btn btn-warning" type="submit">Svuota</button>
-                                    </div>
-                                  </form>
-                            </div>     
-                        </section>
-
+                                        <div class="mb-3">
+                                            <label for="formFileSm" class="form-label">Foto</label>
+                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Check-box" aria-describedby="Check-boxFeedback" required>
+                                            <label class="form-check-label" for="Check-box">
+                                                Seleziona per proseguire
+                                            </label>
+                                            <div id="Check-boxFeedback" class="Check-box"></div>
+                                        </div>
+                                        </div>
+                        
+                                        <div class="col-3 d-flex my-3">
+                                        <button class="btn btn-primary mx-1" type="submit">Salva</button>
+                                        <button class="btn btn-warning" type="submit">Svuota</button>
+                                        </div>
+                                    </form>
+                                </div>     
+                            </section>
+                        </div>
                     </div>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -233,8 +236,8 @@
 
 
             <div class="content-container d-flex flex-column flex-md-row my-4">
-                <!-- Left-Content Section -->
 
+                <!-- Left-Content Section -->
                 <div class="left-container col-12 col-md-8 px-2">
 
                     <!-- TABLE SECTION -->
@@ -440,18 +443,20 @@
                         </div>
                        
                         <div class="accordion" id="accordionExample">
+
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                   Come aggiungere un nuovo studente
                                 </button>
                               </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                 </div>
                               </div>
                             </div>
+
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -464,6 +469,7 @@
                                 </div>
                               </div>
                             </div>
+
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
