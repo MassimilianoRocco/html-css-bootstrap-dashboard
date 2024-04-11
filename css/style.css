@@ -5,7 +5,6 @@ nav{
 main{
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: cadetblue;
 }
 
 .left-wing{
@@ -16,7 +15,6 @@ main{
 
 .main_content{
     width: calc(100% - 130px) ;
-    background-color: grey;
 }
 
 .c_white{
@@ -48,19 +46,13 @@ main{
 
 /* Inside-content */
 
-.left-container{
-    width: 70%;
-    background-color: lightskyblue;
-}
-.right-container{
-    width: 30%;
-    background-color: thistle;
-}
-
 .my_link-logo{
     height: 1.5rem;
 }
 
 .my_card{
-    height: 70%;
+
+}
+.my-faq-card{
+
 }
